@@ -58,6 +58,10 @@ function selectEmails() {
   const inviteUsers = document.querySelectorAll(
     "[data-auto='inviteContainer'] ul li .ccx-ss-user-card-details [aria-label]"
   );
+  const countUsers = document.querySelectorAll(
+    "[data-auto='inviteContainer'] ul li .ccx-ss-user-card-details"
+  );
+  console.log(`Foram copiados: ${countUsers.length} e-mails`);
 
   for (const user of inviteUsers) {
     if (user.getAttribute("aria-label").indexOf("@") > 0) {
