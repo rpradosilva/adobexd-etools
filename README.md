@@ -35,9 +35,7 @@ Automatizar a cópia dos e-mails para outros protótipos através de uma extens�
 5. De volta ao navegador clique em `Carregar sem compactação` e selecione a pasta descompactada
 6. Com a extensão habilitada, acesse seu protótipo e clique em convidar. Irá aparecer um novo botão **Copiar e-mails**
 
-```
-A extensão fica sendo executada sempre que estiver com algum protótipo aberto, podendo gerar um consumo de RAM. Se preferir, opte por deixa-lá desabilitada e habilite quando for copiar e-mails.
-```
+> A extensão fica sendo executada sempre que estiver com algum protótipo aberto, podendo gerar um consumo de RAM. Se preferir, opte por deixa-lá desabilitada e habilite quando for copiar e-mails.
 
 ## Autors
 
