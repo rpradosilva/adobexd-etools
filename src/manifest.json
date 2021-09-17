@@ -1,5 +1,5 @@
 {
-  "name": "Copy Abode Xd e-mails",
+  "name": "Copy Adobe Xd e-mails",
   "description": "A extension to create a copy button into Adobe Xd Link",
   "version": "1.0",
   "permissions": ["activeTab", "clipboardWrite", "clipboardRead"],

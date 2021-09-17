@@ -8,11 +8,8 @@ function verifyLoaded() {
       document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper")
         .length >= 1
     ) {
-      console.log("carregou botão");
       copyButton();
       clearInterval(listeningButton);
-    } else {
-      console.log("nao carregou botão");
     }
   }
 }
@@ -82,12 +79,9 @@ function verifyBox() {
 
   function boxState() {
     if (
-      document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper")
-        .length >= 1
+      document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper").length <
+      1
     ) {
-      console.log("box aberto");
-    } else {
-      console.log("box fechado");
       clearInterval(listeningBox);
       verifyLoaded();
     }
