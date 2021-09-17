@@ -1,15 +1,19 @@
-let listeningButton = setInterval(verifyLoading, 3000);
+verifyLoaded();
 
-function verifyLoading() {
-  if (
-    document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper").length >=
-    1
-  ) {
-    console.log("carregou botão");
-    clearInterval(listeningButton);
-    copyButton();
-  } else {
-    console.log("nao carregou botão");
+function verifyLoaded() {
+  let listeningButton = setInterval(inviteExist, 3200);
+
+  function inviteExist() {
+    if (
+      document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper")
+        .length >= 1
+    ) {
+      console.log("carregou botão");
+      copyButton();
+      clearInterval(listeningButton);
+    } else {
+      console.log("nao carregou botão");
+    }
   }
 }
 
@@ -24,6 +28,7 @@ function copyButton() {
   buttonElement.appendChild(spanElement);
   spanElement.innerHTML = "Copiar Emails";
   buttonElement.addEventListener("click", selectEmails);
+  verifyBox();
 }
 
 let emailsList = [];
@@ -70,4 +75,21 @@ function toClipboard() {
   navigator.clipboard.writeText(copyText.value);
   document.execCommand("copy");
   alert("Emails copiados com sucesso");
+}
+
+function verifyBox() {
+  let listeningBox = setInterval(boxState, 3200);
+
+  function boxState() {
+    if (
+      document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper")
+        .length >= 1
+    ) {
+      console.log("box aberto");
+    } else {
+      console.log("box fechado");
+      clearInterval(listeningBox);
+      verifyLoaded();
+    }
+  }
 }

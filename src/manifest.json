@@ -1,7 +1,7 @@
 {
-  "name": "test-extension",
-  "description": "description test",
-  "version": "0.0.1",
+  "name": "Copy Abode Xd e-mails",
+  "description": "A extension to create a copy button into Adobe Xd Link",
+  "version": "1.0",
   "permissions": ["activeTab", "clipboardWrite", "clipboardRead"],
   "icons": {
     "16": "assets/icon.png",
