@@ -30,15 +30,9 @@ Automatizar a cópia dos e-mails para outros protótipos.
 
 ## Como usar
 
-### 1. Abra seu link do Xd em seu navegador
-
-<img width="100%" src=".github/step1.png"/>
-
-### 2. Com o botão direito clique em inspecionar (devTools)
-
-<img width="50%" src=".github/step2.png"/>
-
-### 3. Cole o código abaixo no devTools e de enter
+1. Abra seu link do Xd em seu navegador
+2. Com o botão direito clique em inspecionar (devTools)
+3. Cole o código abaixo no devTools e de enter
 
 ```js
 function copyUI() {
@@ -86,7 +80,7 @@ function emaislToCopy() {
   inputElement.setAttribute("id", "receiveEmails");
   inputElement.setAttribute(
     "style",
-    "overflow: hidden; z-index: -99999999; font-size:1px; color:white; border:none; outline:none;"
+    "overflow: hidden; z-index: -99999999; font-size:1px; color:white; border:none; outline:none; text-decoration:none;"
   );
   inputElement.setAttribute("value", emailsList);
 }
@@ -101,19 +95,14 @@ function toClipboard() {
 }
 ```
 
-### 4. Clique no botão convidar e espere carregar a lista de usuários
-
-<img width="50%" src=".github/step4.png"/>
-
-### 5. No devTools execute o comando abaixo
+4. Clique no botão convidar e espere carregar a lista de usuários
+5. No devTools execute o comando abaixo
 
 ```js
 copyUI();
 ```
 
-### 6. Clique no botão Copiar Emails e é só colar no próximo protótipo
-
-<img width="100%" src=".github/step6.png"/>
+6. Clique no botão Copiar Emails e é só colar no próximo protótipo
 
 ## Autors
 
