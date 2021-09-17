@@ -1,18 +1,31 @@
-// Criar botão de copiar
-function copyUI() {
+let listeningButton = setInterval(verifyLoading, 3000);
+
+function verifyLoading() {
+  if (
+    document.querySelectorAll(".ccx-ss-invite-footer-button-wrapper").length >=
+    1
+  ) {
+    console.log("carregou botão");
+    clearInterval(listeningButton);
+    copyButton();
+  } else {
+    console.log("nao carregou botão");
+  }
+}
+
+function copyButton() {
   const sectionPosition = document.querySelector(
     ".ccx-ss-invite-footer-button-wrapper"
   );
   const buttonElement = document.createElement("BUTTON");
   sectionPosition.appendChild(buttonElement);
   buttonElement.setAttribute("class", "spectrum-Button spectrum-Button--cta");
-  buttonElement.setAttribute("onclick", "selectEmails()");
   const spanElement = document.createElement("span");
   buttonElement.appendChild(spanElement);
   spanElement.innerHTML = "Copiar Emails";
+  buttonElement.addEventListener("click", selectEmails);
 }
 
-// Selecionar e Armazenar lista de emails (deve executar após a renderização dos dados)
 let emailsList = [];
 
 function selectEmails() {
@@ -33,13 +46,11 @@ function selectEmails() {
   toClipboard();
 }
 
-// Sanitizar dados
 function sanitizeEmails(email) {
   let userEmail = email.toString();
   return userEmail.slice(0, userEmail.length - 1).toLowerCase();
 }
 
-// Criar elemento para receber os e-mails
 function emaislToCopy() {
   const mainPage = document.querySelector("[data-auto='inviteContainer']");
   const inputElement = document.createElement("input");
@@ -52,7 +63,6 @@ function emaislToCopy() {
   inputElement.setAttribute("value", emailsList);
 }
 
-// Enviar para clipboard
 function toClipboard() {
   var copyText = document.getElementById("receiveEmails");
   copyText.select();
