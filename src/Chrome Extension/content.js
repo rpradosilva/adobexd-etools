@@ -1,3 +1,3 @@
 // javascript injetado na página
 
-alert("funcionou");
+console.log("Extensão ativa");
