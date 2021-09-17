@@ -1,11 +1,13 @@
 <br>
 
 <div align="center">
+    <img src=".github/icon.png" alt="Logo Repo" width="80">
     <h1>
-      Copy emails from Adobe Xd URL
+      Copiar e-mails dos links
     </h1>
     A shortcode to copy emails to Clipboard from Adobe Xd links
 </div>
+
 <br>
 <div align="center">
 
