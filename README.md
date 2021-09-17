@@ -5,7 +5,7 @@
     <h1>
       Copiar e-mails dos links
     </h1>
-    A shortcode to copy emails to Clipboard from Adobe Xd links
+    Um atalho para copiar os e-mails convidados para protótipos nos links do Adobe Xd
 </div>
 
 <br>
