@@ -20,7 +20,9 @@
       "32": "images/icon.png",
       "48": "images/icon.png",
       "128": "images/icon.png"
-    }
+    },
+    "default_title": "Copy Emails Adobe Xd Prototype",
+    "default_popup": "popup/index.html"
   },
   "icons": {
     "16": "images/icon.png",
