@@ -41,7 +41,7 @@ The author of this extension is free from any malicious use of the source code.
 ## How to use
 
 <div>
-<img src="example-eng.gif" alt="example" width="100%">
+<img src="example-eng.gif" alt="example" width="400">
 </div>
 
 1. Open the browser extensions area

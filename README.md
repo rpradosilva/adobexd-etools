@@ -41,7 +41,7 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 ## Como usar
 
 <div>
-<img src=".github/example-ptbr.gif" alt="example" width="100%">
+<img src=".github/example-ptbr.gif" alt="example" width="400">
 </div>
 
 1. No seu navegador acesse a área de extensões
