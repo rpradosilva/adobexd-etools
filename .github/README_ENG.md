@@ -22,6 +22,8 @@
 
 [Português](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[**English**](/README_ENG.md)
 
+<img src="example-eng.gif" alt="example" width="400">
+
 </div>
 
 ## About
@@ -39,10 +41,6 @@ The button is only generated when the user has access to invite someone in the p
 The author of this extension is free from any malicious use of the source code.
 
 ## How to use
-
-<div>
-<img src="example-eng.gif" alt="example" width="400">
-</div>
 
 1. Open the browser extensions area
 2. Enable developer mode to import extension

@@ -42,9 +42,6 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 
 ## Como usar
 
-<div>
-</div>
-
 1. No seu navegador acesse a área de extensões
 2. Habilite o modo desenvolvedor para importar a extensão
 3. Faça o [download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) da extensão
