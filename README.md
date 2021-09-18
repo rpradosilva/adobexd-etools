@@ -6,6 +6,8 @@
       Copiar e-mails do Adobe Xd
     </h1>
     Extensão que habilita um botão para copiar os e-mails convidados do Adobe Xd
+    <br>
+<img src=".github/example-ptbr.gif" alt="example" width="400">
 </div>
 
 <br>
@@ -41,7 +43,6 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 ## Como usar
 
 <div>
-<img src=".github/example-ptbr.gif" alt="example" width="400">
 </div>
 
 1. No seu navegador acesse a área de extensões
