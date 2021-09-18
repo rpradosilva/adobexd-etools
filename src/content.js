@@ -23,7 +23,7 @@ function copyButton() {
   buttonElement.setAttribute("class", "spectrum-Button spectrum-Button--cta");
   const spanElement = document.createElement("span");
   buttonElement.appendChild(spanElement);
-  spanElement.innerHTML = "Copiar Emails";
+  spanElement.innerHTML = "Copy Emails";
   buttonElement.addEventListener("click", selectEmails);
   verifyBox();
 }

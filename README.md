@@ -14,8 +14,13 @@
 [![Sobre](https://img.shields.io/badge/-Sobre-470137)](#sobre)
 [![Permissoes](https://img.shields.io/badge/-Permissões-470137)](#permissões)
 [![Licenca](https://img.shields.io/badge/-Licença-470137)](/LICENSE)
-[![Autors](https://img.shields.io/badge/-Autor-470137)](#autor)
+[![Autors](https://img.shields.io/badge/-Autor-470137)](#autores)
 [![Como](https://img.shields.io/badge/-Download-FE62F5)](#como-usar)
+
+</div>
+<div align="center">
+
+[**Português**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[English](/README_ENG.md)
 
 </div>
 
@@ -37,14 +42,16 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 
 1. No seu navegador acesse a área de extensões
 2. Habilite o modo desenvolvedor para importar a extensão
-3. Faça o [download](package/copy-xd-emails.zip) da extensão
+3. Faça o [download](package/extension_copy-xd-emails.zip) da extensão
 4. Descompacte a pasta
 5. De volta ao navegador clique em `Carregar sem compactação` e selecione a pasta descompactada
-6. Com a extensão habilitada, acesse seu protótipo e clique em convidar. Irá aparecer um novo botão **Copiar e-mails**
+6. Com a extensão habilitada, acesse e recarregue seu protótipo
+7. Clique em convidar. Irá aparecer um novo botão `Copy Emails`
+8. Após clicar no botão `Copy Emails` é só colar (ctrl + v / cmd + v), os e-mails estarão na área de transferência
 
 > A extensão fica sendo executada sempre que estiver com algum protótipo aberto, podendo gerar um alto consumo de RAM. Se preferir, opte por deixa-lá desabilitada e habilite quando for copiar e-mails.
 
-## Autors
+## Autores
 
 |      [Rafael Prado](http://www.github.com/rpradosilva)      |
 | :---------------------------------------------------------: |
