@@ -1,7 +1,7 @@
 <br>
 
 <div align="center">
-    <img src="icon.png" alt="Logo Repo" width="80">
+    <img src="https://github.com/rpradosilva/copy-xd-emails/raw/main/.github/icon.png" alt="Logo Repo" width="80">
     <h1>
       Copy Adobe Xd e-mails
     </h1>
@@ -42,7 +42,7 @@ The author of this extension is free from any malicious use of the source code.
 
 1. Open the browser extensions area
 2. Enable developer mode to import extension
-3. [Download](package/extension_copy-xd-emails.zip) the extension
+3. [Download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) the extension
 4. Unzip the file
 5. Back in the browser, click `Load without compress` and select unzip the folder
 6. Enable extension, open or reload your prototype

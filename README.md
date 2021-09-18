@@ -42,7 +42,7 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 
 1. No seu navegador acesse a área de extensões
 2. Habilite o modo desenvolvedor para importar a extensão
-3. Faça o [download](package/extension_copy-xd-emails.zip) da extensão
+3. Faça o [download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) da extensão
 4. Descompacte a pasta
 5. De volta ao navegador clique em `Carregar sem compactação` e selecione a pasta descompactada
 6. Com a extensão habilitada, acesse e recarregue seu protótipo
