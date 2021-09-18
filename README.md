@@ -15,7 +15,6 @@
 [![Permissoes](https://img.shields.io/badge/-Permissões-470137)](#permissões)
 [![Licenca](https://img.shields.io/badge/-Licença-470137)](/LICENSE)
 [![Autors](https://img.shields.io/badge/-Autor-470137)](#autor)
-<br>
 
 [![Como](https://img.shields.io/badge/-Download-FE62F5)](#como-usar)
 [![Discord](https://img.shields.io/badge/-LinkedIn-470137?&labelColor=FE62F5&logo=linkedin&logoColor=470137&link=https://www.linkedin.com/in/rpradosilva)](https://www.linkedin.com/in/rpradosilva)
