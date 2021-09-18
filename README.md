@@ -51,6 +51,15 @@ O Author desta extensão é isento de qualquer uso mal intensionado do código f
 
 > A extensão fica sendo executada sempre que estiver com algum protótipo aberto, podendo gerar um alto consumo de RAM. Se preferir, opte por deixa-lá desabilitada e habilite quando for copiar e-mails.
 
+## Compatibilidade
+
+|                 Navegador                  | Compatível |
+| :----------------------------------------: | :--------: |
+| <img src=".github/chrome.png" width="20">  |   **✓**    |
+|  <img src=".github/edge.png" width="20">   |   **✓**    |
+| <img src=".github/firefox.png" width="20"> |     ✗      |
+| <img src=".github/safari.png" width="20">  |     ✗      |
+
 ## Autores
 
 |      [Rafael Prado](http://www.github.com/rpradosilva)      |
