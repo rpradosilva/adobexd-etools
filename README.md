@@ -32,13 +32,13 @@ Em um fluxo de trabalho onde usamos o Adobe Xd como principal forma de validar p
 
 ### Solução
 
-**Facilitar** a cópia dos e-mails para outros protótipos através de uma extensão que criasse um botão para copiar e-mails dentro dos protótipos.
+**Facilitar** a cópia dos e-mails para outros protótipos através de uma extensão que criasse um botão para copiar e-mails.
 
 ### Permissões
 
 O botão só é gerado quando o usuário tem acesso para convidar alguém no protótipo, seguindo as permissões e previlégios concedidos através do Adobe Xd.
 
-O Author desta extensão é isento de qualquer uso mal intensionado do código fonte.
+O Autor desta extensão é isento de qualquer uso mal intensionado do código fonte.
 
 ## Como usar
 

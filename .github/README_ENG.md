@@ -32,7 +32,7 @@ In a workflow where we used Adobe Xd as the primary way to validate prototypes, 
 
 ### Solution
 
-**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails into prototypes.
+**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails.
 
 ### Permissions
 
