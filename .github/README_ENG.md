@@ -51,9 +51,9 @@ The author of this extension is free from any malicious use of the source code.
 
 > The extension runs whenever there is an open prototype, which can lead to high RAM consumption. If you prefer, choose to leave it disabled and enable it when copying emails.
 
-## Compatibilidade
+## Compatibility
 
-|             Navegador              | Compatível |
+|              Browser               | Compatible |
 | :--------------------------------: | :--------: |
 | <img src="chrome.png" width="20">  |   **✓**    |
 |  <img src="edge.png" width="20">   |   **✓**    |
