@@ -20,7 +20,7 @@
 </div>
 <div align="center">
 
-[**Português**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[English](/README_ENG.md)
+[**Português**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[English](.github/README_ENG.md)
 
 </div>
 
