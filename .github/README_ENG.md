@@ -1,7 +1,7 @@
 <br>
 
 <div align="center">
-    <img src="https://github.com/rpradosilva/copy-xd-emails/raw/main/.github/icon.png" alt="Logo Repo" width="80">
+    <img src="icon.png" alt="Logo Repo" width="80">
     <h1>
       Copy Adobe Xd e-mails
     </h1>
