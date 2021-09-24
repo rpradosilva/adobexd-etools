@@ -37,7 +37,7 @@ function selectEmails() {
   const countUsers = document.querySelectorAll(
     "[data-auto='inviteContainer'] ul li .ccx-ss-user-card-details"
   );
-  console.log(`Foram copiados: ${countUsers.length} e-mails`);
+  let qtyEmails = countUsers.length;
 
   for (const user of inviteUsers) {
     if (user.getAttribute("aria-label").indexOf("@") > 0) {
@@ -45,7 +45,7 @@ function selectEmails() {
     }
   }
   emaislToCopy();
-  toClipboard();
+  toClipboard(qtyEmails);
 }
 
 function sanitizeEmails(email) {
@@ -65,13 +65,13 @@ function emaislToCopy() {
   inputElement.setAttribute("value", emailsList);
 }
 
-function toClipboard() {
+function toClipboard(qtyEmails) {
   var copyText = document.getElementById("receiveEmails");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
   document.execCommand("copy");
-  alert("Emails copiados com sucesso");
+  alert(`Foram copiados: ${qtyEmails} Emails!`);
 }
 
 function verifyBox() {

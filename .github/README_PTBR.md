@@ -61,7 +61,7 @@ O Autor desta extensão é isento de qualquer uso mal intensionado do código fo
 | :--------------------------------: | :--------: |
 | <img src="chrome.png" width="20">  |   **✓**    |
 |  <img src="edge.png" width="20">   |   **✓**    |
-| <img src="firefox.png" width="20"> |     ✗      |
+| <img src="firefox.png" width="20"> |   **✓**    |
 | <img src="safari.png" width="20">  |     ✗      |
 
 ## Autores
