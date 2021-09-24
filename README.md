@@ -3,68 +3,68 @@
 <div align="center">
     <img src=".github/icon.png" alt="Logo Repo" width="80">
     <h1>
-      Copiar e-mails do Adobe Xd
+      Copy Adobe Xd e-mails
     </h1>
-    Extensão que habilita um botão para copiar os e-mails convidados do Adobe Xd
+    An extension to enable the button to copy emails from Adobe Xd prototype to clipboard
 </div>
 
 <br>
 <div align="center">
 
-[![Sobre](https://img.shields.io/badge/-Sobre-470137)](#sobre)
-[![Permissoes](https://img.shields.io/badge/-Permissões-470137)](#permissões)
-[![Licenca](https://img.shields.io/badge/-Licença-470137)](/LICENSE)
-[![Autors](https://img.shields.io/badge/-Autor-470137)](#autores)
-[![Como](https://img.shields.io/badge/-Download-FE62F5)](#como-usar)
+[![About](https://img.shields.io/badge/-About-470137)](#about)
+[![Permissions](https://img.shields.io/badge/-Permissions-470137)](#permissions)
+[![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
+[![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
+[![How-to-use](https://img.shields.io/badge/-Download-FE62F5)](#how-to-use)
 
-[![Youtube Badge](https://img.shields.io/badge/-Explicando%20a%20solução-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
+[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
 
 </div>
 <div align="center">
 
-[**Português**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[English](.github/README_ENG.md)
+[**English**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Português](/README_PTBR.md)
 
-<img src=".github/example-ptbr.gif" alt="example" width="400">
+<img src=".github/example-eng.gif" alt="example" width="400">
 
 </div>
 
-## Sobre
+## About
 
-Em um fluxo de trabalho onde usamos o Adobe Xd como principal forma de validar protótipos, foi identificado uma lacuna quando o assunto é copiar e-mails de convidados para compartilhar em outro protótipo.
+In a workflow where we used Adobe Xd as the primary way to validate prototypes, a gap was identified when it came to copying guest emails to share on another prototype.
 
-### Solução
+### Solution
 
-**Facilitar** a cópia dos e-mails para outros protótipos através de uma extensão que criasse um botão para copiar e-mails.
+**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails.
 
-### Permissões
+### Permissions
 
-O botão só é gerado quando o usuário tem acesso para convidar alguém no protótipo, seguindo as permissões e previlégios concedidos através do Adobe Xd.
+The button is only generated when the user has access to invite someone in the prototype, following as access and privileges granted through Adobe Xd.
 
-O Autor desta extensão é isento de qualquer uso mal intensionado do código fonte.
+The author of this extension is free from any malicious use of the source code.
 
-## Como usar
+## How to use
 
-1. No seu navegador acesse a área de extensões
-2. Habilite o modo desenvolvedor para importar a extensão
-3. Faça o [download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) da extensão
-4. Descompacte a pasta
-5. De volta ao navegador clique em `Carregar sem compactação` e selecione a pasta descompactada
-6. Com a extensão habilitada, acesse e recarregue seu protótipo
-7. Clique em convidar. Irá aparecer um novo botão `Copy Emails`
-8. Após clicar no botão `Copy Emails` é só colar (ctrl + v / cmd + v), os e-mails estarão na área de transferência
+1. Open the browser extensions area
+2. Enable developer mode to import extension
+3. [Download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) the extension
+4. Unzip the file
+5. Back in the browser, click `Load without compress` and select unzip the folder
+6. Enable extension, open or reload your prototype
+7. Click Invite. You will see the new `Copy Emails` button
+8. Click `Copy Emails` and paste (ctrl + v / cmd + v). These emails will be on the clipboard.
 
-> A extensão fica sendo executada sempre que estiver com algum protótipo aberto, podendo gerar um alto consumo de RAM. Se preferir, opte por deixa-lá desabilitada e habilite quando for copiar e-mails.
+> The extension runs whenever there is an open prototype, which can lead to high RAM consumption. If you prefer, choose to leave it disabled and enable it when copying emails.
 
-## Compatibilidade
+## Compatibility
 
-|                 Navegador                  | Compatível |
+|                  Browser                   | Compatible |
 | :----------------------------------------: | :--------: |
 | <img src=".github/chrome.png" width="20">  |   **✓**    |
 |  <img src=".github/edge.png" width="20">   |   **✓**    |
 | <img src=".github/firefox.png" width="20"> |     ✗      |
 | <img src=".github/safari.png" width="20">  |     ✗      |
 
-## Autores
+## Authors
 
 |      [Rafael Prado](http://www.github.com/rpradosilva)      |
 | :---------------------------------------------------------: |
