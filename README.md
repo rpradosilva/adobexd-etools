@@ -22,7 +22,7 @@
 </div>
 <div align="center">
 
-[**English**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Português](/README_PTBR.md)
+[**English**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Português](.github/README_PTBR.md)
 
 <img src=".github/example-eng.gif" alt="example" width="400">
 
@@ -72,4 +72,4 @@ The author of this extension is free from any malicious use of the source code.
 
 ---
 
-### [<img alt="Logo RPrado" src="https://github.com/rpradodesign/default-readme/blob/main/.github/assets/images/logo-rprado.png" width="91px" />](http://rprado.design)
+### [<img alt="Logo RPrado" src="https://raw.githubusercontent.com/rpradosilva/rpradosilva/master/.github/logo-rprado.png" width="91px" />](http://rprado.design)
