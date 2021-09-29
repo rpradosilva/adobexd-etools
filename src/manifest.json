@@ -2,7 +2,7 @@
   "name": "Copy Adobe Xd e-mails",
   "description": "A extension to create a copy button into Adobe Xd Link",
   "version": "1.0",
-  "permissions": ["activeTab", "clipboardWrite", "clipboardRead"],
+  "permissions": ["clipboardWrite", "clipboardRead"],
   "icons": {
     "16": "assets/icon.png",
     "48": "assets/icon.png",
