@@ -15,7 +15,9 @@
 [![Permissions](https://img.shields.io/badge/-Permissions-470137)](#permissions)
 [![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
+
 [![How-to-use](https://img.shields.io/badge/-Download-FE62F5)](#how-to-use)
+[![size-package](https://img.shields.io/github/size/rpradosilva/copy-xd-emails/package/extension_copy-xd-emails.zip?style=social)](#)
 
 [![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
 
