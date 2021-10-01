@@ -26,13 +26,13 @@
 
 <img src=".github/example-eng.gif" alt="example" width="400">
 
-[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
-
 </div>
 
 ## About
 
 In a workflow where we used Adobe Xd as the primary way to validate prototypes, a gap was identified when it came to copying guest emails to share on another prototype.
+
+[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
 
 ### Solution
 
