@@ -15,9 +15,9 @@
 [![Permissoes](https://img.shields.io/badge/-Permissões-470137)](#permissões)
 [![Licenca](https://img.shields.io/badge/-Licença-470137)](/LICENSE)
 [![Autors](https://img.shields.io/badge/-Autor-470137)](#autores)
-[![Como](https://img.shields.io/badge/-Download-FE62F5)](#como-usar)
 
-[![Youtube Badge](https://img.shields.io/badge/-Explicando%20a%20solução-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
+[![Como](https://img.shields.io/badge/-Download-FE62F5)](#como-usar)
+![size-package](https://img.shields.io/github/size/rpradosilva/copy-xd-emails/package/extension_copy-xd-emails.zip?style=social)
 
 </div>
 <div align="center">
@@ -31,6 +31,8 @@
 ## Sobre
 
 Em um fluxo de trabalho onde usamos o Adobe Xd como principal forma de validar protótipos, foi identificado uma lacuna quando o assunto é copiar e-mails de convidados para compartilhar em outro protótipo.
+
+[![Youtube Badge](https://img.shields.io/badge/-Explicando%20a%20solução-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
 
 ### Solução
 
