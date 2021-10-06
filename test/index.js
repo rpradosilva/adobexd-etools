@@ -13,3 +13,5 @@ function removeAction() {
   let dropButtons = document.querySelectorAll(".spectrum-Menu-item");
   dropButtons[2].click();
 }
+
+removeEmails();
