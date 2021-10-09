@@ -2,7 +2,7 @@ function createToolkit() {
   createToolkitArea();
   createToolkitTitle();
   createButtonContainer();
-  createFilter();
+  createFilterButton();
   createCopyButton();
   createRemoveButton();
 }

@@ -10,12 +10,12 @@ function insertElement(id, htmlTag, destinationClass, position) {
   }
 }
 
-function insertText(id, textContent) {
-  let container = document.querySelector(`#${id}`);
-  container.innerHTML = textContent;
+function insertText(destinationId, text) {
+  let container = document.querySelector(`#${destinationId}`);
+  container.innerHTML = text;
 }
 
-function insertAttr(id, attr, value) {
-  let container = document.querySelector(`#${id}`);
+function insertAttr(destinationId, attr, value) {
+  let container = document.querySelector(`#${destinationId}`);
   container.setAttribute(attr, value);
 }
