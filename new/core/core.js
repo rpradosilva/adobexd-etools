@@ -19,3 +19,10 @@ function insertAttr(destinationId, attr, value) {
   let container = document.querySelector(`#${destinationId}`);
   container.setAttribute(attr, value);
 }
+
+function removeElement(id, location) {
+  let container = document.querySelector(location);
+  let element = document.querySelector(id);
+
+  container.removeChild(element);
+}

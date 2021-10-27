@@ -1,7 +1,7 @@
 async function copyEmails(filter) {
   const emailsList = await selectEmails(filter);
+  console.log(emailsList);
   await createEmailPlaceholder(emailsList);
-  toClipboard();
+  copyToClipboard();
+  removeElement("#emails-placeholder", "[data-auto='inviteContainer']");
 }
-
-copyEmails();

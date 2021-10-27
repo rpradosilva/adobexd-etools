@@ -1,15 +1,10 @@
 function createToolkitArea() {
-  insertElement(
-    "toolkit-area",
-    "div",
-    ".ccx-ss-collaborators-list-header-container",
-    2
-  );
+  insertElement("toolkit-area", "div", ".ccx-ss-share-invite", 2);
   insertAttr("toolkit-area", "class", "ccx-ss-invite-footer-button-wrapper");
   insertAttr(
     "toolkit-area",
     "style",
-    "background: rgba(50, 50, 50, 0.04); padding-top: 8px; padding-bottom: 8px; margin-top: 16px;"
+    "background: rgba(50, 50, 50, 0.04); border-radius: 4px; width: 100%; padding: 16px; margin: 0px 0px 16px 0px;"
   );
 }
 
@@ -19,7 +14,7 @@ function createToolkitTitle() {
   insertAttr(
     "toolkit-title",
     "style",
-    "font-size: var(--ccx-share-sheet-font-size-xmd); font-weight: var(--ccx-share-sheet-font-weight-normal); color: #747474; line-height: 1.3; font-style: normal; letter-spacing: 0; text-transform: none; margin-bottom: 16px; margin-top: 8px;"
+    "font-size: 12px; font-weight: normal; color: #959595; padding: 0px; margin: 0px 0px 8px 0px;"
   );
 }
 
