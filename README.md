@@ -44,8 +44,6 @@ The author of this extension is free from any malicious use of the source code.
 1. Install extension [here](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
 2. Enable and access your adobe xd prototype link
 
-> The extension runs whenever there is an open prototype, which can lead to high RAM consumption. If you prefer, choose to leave it disabled and enable it when copying emails.
-
 ## Compatibility
 
 |                  Browser                   | Compatible |
