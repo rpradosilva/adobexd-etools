@@ -1,6 +1,6 @@
 {
-  "name": "Copy Adobe Xd e-mails",
-  "description": "A extension to create a copy button into Adobe Xd Link",
+  "name": "Adobe Xd E-tools",
+  "description": "An extension to enable Adobe Xd prototype email tools",
   "version": "1.0",
   "permissions": ["clipboardWrite", "clipboardRead"],
   "icons": {

@@ -3,9 +3,9 @@
 <div align="center">
     <img src=".github/icon.png" alt="Logo Repo" width="80">
     <h1>
-      Copy Adobe Xd e-mails
+      Adobe Xd E-tools
     </h1>
-    An extension to enable the button to copy emails from Adobe Xd prototype to clipboard
+    An extension to enable Adobe Xd prototype email tools
 </div>
 
 <br>
@@ -15,16 +15,11 @@
 [![Permissions](https://img.shields.io/badge/-Permissions-470137)](#permissions)
 [![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
+[![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
 
-[![How-to-use](https://img.shields.io/badge/-Download-FE62F5)](#how-to-use)
-![size-package](https://img.shields.io/github/size/rpradosilva/copy-xd-emails/package/extension_copy-xd-emails.zip?style=social)
+< -- update image -- >
 
-</div>
-<div align="center">
-
-[**English**](/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Português](.github/README_PTBR.md)
-
-<img src=".github/example-eng.gif" alt="example" width="400">
+<!-- <img src=".github/example-eng.gif" alt="example" width="400"> -->
 
 </div>
 
@@ -36,7 +31,7 @@ In a workflow where we used Adobe Xd as the primary way to validate prototypes, 
 
 ### Solution
 
-**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails.
+**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails. After that, the tools got complex.
 
 ### Permissions
 
@@ -46,14 +41,8 @@ The author of this extension is free from any malicious use of the source code.
 
 ## How to use
 
-1. Open the browser extensions area
-2. Enable developer mode to import extension
-3. [Download](https://github.com/rpradosilva/copy-xd-emails/raw/main/package/extension_copy-xd-emails.zip) the extension
-4. Unzip the file
-5. Back in the browser, click `Load without compress` and select unzip the folder
-6. Enable extension, open or reload your prototype
-7. Click Invite. You will see the new `Copy Emails` button
-8. Click `Copy Emails` and paste (ctrl + v / cmd + v). These emails will be on the clipboard.
+1. Install extension [here](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
+2. Enable and access your adobe xd prototype link
 
 > The extension runs whenever there is an open prototype, which can lead to high RAM consumption. If you prefer, choose to leave it disabled and enable it when copying emails.
 
