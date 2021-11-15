@@ -14,7 +14,15 @@
   "content_scripts": [
     {
       "matches": ["https://xd.adobe.com/*"],
-      "js": ["content.js"]
+      "js": [
+        "content.js",
+        "core/index.js",
+        "commands/create.js",
+        "commands/select.js",
+        "commands/filter.js",
+        "commands/copy.js",
+        "commands/remove.js"
+      ]
     }
   ],
   "manifest_version": 2
