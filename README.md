@@ -12,7 +12,6 @@
 <div align="center">
 
 [![About](https://img.shields.io/badge/-About-470137)](#about)
-[![Permissions](https://img.shields.io/badge/-Permissions-470137)](#permissions)
 [![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
 [![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
@@ -23,33 +22,34 @@
 
 ## About
 
-In a workflow where we used Adobe Xd as the primary way to validate prototypes, a gap was identified when it came to copying guest emails to share on another prototype.
+In a workflow where we used Adobe Xd as the primary way to validate prototypes, a gap was identified when it came to managing guest emails.
 
-[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
+**Solution**
 
-### Solution
+Ease email management for adobe xd prototypes through an extension that creates a toolbox.
 
-**Make it easy** to copy emails to other prototypes through an extension that created a button to copy emails. After that, the tools got complex.
-
-### Permissions
+**Permissions**
 
 The button is only generated when the user has access to invite someone in the prototype, following as access and privileges granted through Adobe Xd.
 
 The author of this extension is free from any malicious use of the source code.
 
+[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
+
 ## How to use
 
 1. Install extension [here](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
-2. Enable and access your adobe xd prototype link
+2. Enable extension
+3. Go to your adobe xd prototype link or refresh your prototype page
 
 ## Compatibility
 
 |                  Browser                   | Compatible |
 | :----------------------------------------: | :--------: |
-| <img src=".github/chrome.png" width="20">  |   **✓**    |
-|  <img src=".github/edge.png" width="20">   |   **✓**    |
-| <img src=".github/firefox.png" width="20"> |   **✓**    |
-| <img src=".github/safari.png" width="20">  |     ✗      |
+| <img src=".github/chrome.png" width="20">  |     ✅     |
+|  <img src=".github/edge.png" width="20">   |     ✅     |
+| <img src=".github/firefox.png" width="20"> |     ✅     |
+| <img src=".github/safari.png" width="20">  |     ⛔     |
 
 ## Authors
 
