@@ -24,9 +24,9 @@ function createToolkit() {
   let filterButton = document.querySelector("#select-button");
   filterButton.addEventListener("change", function () {
     let option = this.selectedOptions[0];
-    let value = option.value;
-    filterItems(value);
-    return (filter = value);
+    let selectedOption = option.value;
+    filterItems(selectedOption);
+    return (filter = selectedOption);
   });
 
   let copyButton = document.querySelector("#button-copy");
