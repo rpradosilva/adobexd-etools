@@ -44,12 +44,12 @@ The author of this extension is free from any malicious use of the source code.
 
 ## Compatibility
 
-|                  Browser                   | Compatible |
-| :----------------------------------------: | :--------: |
-| <img src=".github/chrome.png" width="20">  |     ✅     |
-|  <img src=".github/edge.png" width="20">   |     ✅     |
-| <img src=".github/firefox.png" width="20"> |     ✅     |
-| <img src=".github/safari.png" width="20">  |     ⛔     |
+|                  Browser                   | It works |
+| :----------------------------------------: | :------: |
+| <img src=".github/chrome.png" width="20">  |    ✅    |
+|  <img src=".github/edge.png" width="20">   |    ✅    |
+| <img src=".github/firefox.png" width="20"> |    ✅    |
+| <img src=".github/safari.png" width="20">  |    ⛔    |
 
 ## Authors
 
