@@ -44,10 +44,10 @@ The author of this extension is free from any malicious use of the source code.
 
 |                  Browser                   | It works |
 | :----------------------------------------: | :------: |
-| <img src=".github/chrome.png" width="20">  |    ✅    |
-|  <img src=".github/edge.png" width="20">   |    ✅    |
-| <img src=".github/firefox.png" width="20"> |    ✅    |
-| <img src=".github/safari.png" width="20">  |    ⛔    |
+| <img src=".github/chrome.png" width="32">  |    ✅    |
+|  <img src=".github/edge.png" width="32">   |    ✅    |
+| <img src=".github/firefox.png" width="32"> |    ✅    |
+| <img src=".github/safari.png" width="32">  |    ⛔    |
 
 ## Authors
 
