@@ -34,8 +34,6 @@ The button is only generated when the user has access to invite someone in the p
 
 The author of this extension is free from any malicious use of the source code.
 
-[![Youtube Badge](https://img.shields.io/badge/-Explaining%20the%20solution-fffff0?style=flat&labelColor=ff0000&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=i9G2mufZwZo)](https://www.youtube.com/watch?v=i9G2mufZwZo)
-
 ## How to use
 
 1. Install extension [here](https://chrome.google.com/webstore/detail/copy-adobe-xd-e-mails/ecmiahbepkgkfkcbbnklhhfilpljehjn)
