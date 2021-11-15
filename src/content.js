@@ -1,6 +1,3 @@
-/////////////////////////////////////////////////////
-//// identify when open or closed invite modal
-/////////////////////////////////////////////////////
 document.addEventListener(
   "click",
   function (event) {
@@ -13,9 +10,6 @@ document.addEventListener(
   false
 );
 
-/////////////////////////////////////////////////////
-//// identify complete load invite modal
-/////////////////////////////////////////////////////
 function verifyLoadedModal() {
   let listeningLoading = setInterval(inviteExist, 1000);
   let identifyCompleteLoad = ".ccx-ss-collaborators-list-header-container";
@@ -28,26 +22,40 @@ function verifyLoadedModal() {
   }
 }
 
-/////////////////////////////////////////////////////
-//// create toolkit
-/////////////////////////////////////////////////////
 function createToolkit() {
   createToolkitArea();
   createToolkitTitle();
   createButtonContainer();
-  // createFilterButton();
+  createFilterButton();
   createCopyButton();
   createRemoveButton();
 
-  // let filterButton = document.querySelector("#dropdown-button");
-  // filterButton.addEventListener("click", function () {
-  //   console.log("filter button");
-  // });
+  let filter;
+
+  let filterButton = document.querySelector("#select-button");
+  filterButton.addEventListener("change", function () {
+    let option = this.selectedOptions[0];
+    let value = option.value;
+
+    let copyButtonText = document.querySelector("#button-copy span");
+    let removeButtonText = document.querySelector("#button-remove span");
+
+    if (value != "") {
+      copyButtonText.innerHTML = `Copy ${value}`;
+      removeButtonText.innerHTML = `Remove ${value}`;
+    } else {
+      copyButtonText.innerHTML = "Copy All";
+      removeButtonText.innerHTML = "Remove All";
+    }
+
+    return (filter = value);
+  });
 
   let copyButton = document.querySelector("#button-copy");
   copyButton.addEventListener("click", function () {
-    function copyEmails(filter) {
-      const emailsList = selectEmails(filter);
+    function copyEmails(selection) {
+      selection = filter;
+      const emailsList = selectEmails(selection);
       createEmailPlaceholder(emailsList);
       copyToClipboard(emailsList);
       removeElement("#emails-placeholder", "[data-auto='inviteContainer']");
@@ -57,15 +65,13 @@ function createToolkit() {
 
   let removeButton = document.querySelector("#button-remove");
   removeButton.addEventListener("click", function () {
-    let resultRemove = confirm("All emails will be removed. Please be right.");
+    let resultRemove = confirm("The emails will be removed. Please be right.");
     if (resultRemove == true) {
-      removeEmails();
+      selection = filter;
+      removeEmails(filter);
     }
   });
 
-  /////////////////////////////////////////////////////
-  //// Select emails
-  /////////////////////////////////////////////////////
   function selectEmails(filter) {
     let emailsList = [];
     const usersList = document.querySelectorAll(
@@ -76,7 +82,8 @@ function createToolkit() {
       let email = user.getAttribute("aria-label");
       if (
         (email.indexOf("@") > 0 && email.indexOf(filter) > 0) ||
-        (email.indexOf("@") > 0 && filter === undefined)
+        (email.indexOf("@") > 0 && filter === undefined) ||
+        (email.indexOf("@") > 0 && filter === "")
       ) {
         emailsList.push(sanitizeEmails(email));
       }
@@ -84,16 +91,10 @@ function createToolkit() {
     return emailsList;
   }
 
-  /////////////////////////////////////////////////////
-  //// Sanitize emails
-  /////////////////////////////////////////////////////
   function sanitizeEmails(email) {
     return email.slice(0, email.length - 1).toLowerCase();
   }
 
-  /////////////////////////////////////////////////////
-  //// toClipboard
-  /////////////////////////////////////////////////////
   function copyToClipboard(emailsList) {
     var emails = document.getElementById("emails-placeholder");
     emails.select();
@@ -101,12 +102,8 @@ function createToolkit() {
     document.execCommand("copy");
     navigator.clipboard.writeText(emails.value);
     alert(`${emailsList.length} e-mails copied to clipboard`);
-    // copiar só funciona pq o alerta está focando na página verificar como estilizar o alert
   }
 
-  /////////////////////////////////////////////////////
-  //// Placeholder to copy
-  /////////////////////////////////////////////////////
   function createEmailPlaceholder(emailsList) {
     let emails = emailsList.toString();
 
@@ -119,17 +116,29 @@ function createToolkit() {
     insertAttr("emails-placeholder", "style", "user-select: all;");
   }
 
-  /////////////////////////////////////////////////////
-  //// Remove emails function
-  /////////////////////////////////////////////////////
-  function removeEmails() {
-    const inviteUsers = document.querySelectorAll(
-      "[data-auto='inviteContainer'] .permissions-dropdown-container [aria-haspopup='listbox']"
+  function removeEmails(filter) {
+    const emailsList = selectEmails(filter);
+    const usersItem = document.querySelectorAll(
+      "[data-entity-type='collaborator']"
     );
 
-    for (const user of inviteUsers) {
-      user.click();
-      removeAction();
+    for (const userItem of usersItem) {
+      let userInfos = userItem.firstElementChild;
+      let userDetails = userInfos.querySelector(".ccx-ss-user-card-details");
+      let emailUsers = userDetails.querySelectorAll("[aria-label]");
+
+      for (const emailUser of emailUsers) {
+        for (const emailSelected of emailsList) {
+          if (emailSelected == emailUser.textContent) {
+            let rightColumn = userItem.lastElementChild;
+            let removeButton = rightColumn.querySelector("button");
+            if (removeButton != null) {
+              removeButton.click();
+              removeAction();
+            }
+          }
+        }
+      }
     }
   }
   function removeAction() {
@@ -138,16 +147,13 @@ function createToolkit() {
   }
 }
 
-/////////////////////////////////////////////////////
-//// create elements
-/////////////////////////////////////////////////////
 function createToolkitArea() {
   insertElement("toolkit-area", "div", ".ccx-ss-share-invite", 2);
   insertAttr("toolkit-area", "class", "ccx-ss-invite-footer-button-wrapper");
   insertAttr(
     "toolkit-area",
     "style",
-    "background: rgba(50, 50, 50, 0.04); border-radius: 4px; width: 100%; padding: 16px; margin: 0px 0px 16px 0px;"
+    "background: rgba(50, 50, 50, 0.04); border-radius: 4px; width: 100%; padding: 16px; margin: 0px 0px 8px 0px;"
   );
 }
 
@@ -168,27 +174,68 @@ function createButtonContainer() {
 }
 
 function createFilterButton() {
-  insertElement("dropdown-button", "button", "#button-container");
+  insertElement("select-button", "select", "#button-container");
   insertAttr(
-    "dropdown-button",
+    "select-button",
     "class",
     "spectrum-ActionButton spectrum-ActionButton--sizeM"
   );
-  insertElement("dropdown-button__ico", "img", "#dropdown-button");
-  insertAttr(
-    "dropdown-button__ico",
-    "src",
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgd2lkdGg9IjE4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmEgewogICAgICAgIGZpbGw6ICM2RTZFNkU7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDx0aXRsZT5TIENoZXZyb25Eb3duIDE4IE48L3RpdGxlPgogIDxyZWN0IGlkPSJDYW52YXMiIGZpbGw9IiNmZjEzZGMiIG9wYWNpdHk9IjAiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQsNy4wMWExLDEsMCwwLDEsMS43MDU1LS43MDU1bDMuMjg5LDMuMjg2LDMuMjg5LTMuMjg2YTEsMSwwLDAsMSwxLjQzNywxLjM4NjVsLS4wMjQ1LjAyNDVMOS43LDExLjcwNzVhMSwxLDAsMCwxLTEuNDEyNSwwTDQuMjkzLDcuNzE2QS45OTQ1Ljk5NDUsMCwwLDEsNCw3LjAxWiIgLz4KPC9zdmc+"
+  insertAttr("select-button", "style", "width: 100%; margin: 0 0 8px 0;");
+  insertElement("option-all", "option", "#select-button");
+  insertAttr("option-all", "value", "");
+  insertText("option-all", "Filter by All");
+  const emailList = selectEmails();
+  const allDomains = selectDomains(emailList);
+  let domains = allDomains;
+  let uniqueDomains = [...new Set(domains)];
+
+  for (const domain of uniqueDomains) {
+    insertElement(
+      `option-item-${uniqueDomains.indexOf(domain)}`,
+      "option",
+      "#select-button"
+    );
+    insertAttr(
+      `option-item-${uniqueDomains.indexOf(domain)}`,
+      "value",
+      `${domain}`
+    );
+    insertText(
+      `option-item-${uniqueDomains.indexOf(domain)}`,
+      `Filter by ${domain}`
+    );
+  }
+}
+
+function selectEmails(filter) {
+  let emailsList = [];
+  const usersList = document.querySelectorAll(
+    "[data-auto='inviteContainer'] ul li .ccx-ss-user-card-details [aria-label]"
   );
-  insertAttr(
-    "dropdown-button__ico",
-    "class",
-    "spectrum-Icon spectrum-Icon--sizeS"
-  );
-  insertElement("dropdown-button__text", "span", "#dropdown-button");
-  insertAttr("dropdown-button__text", "class", "spectrum-ActionButton-label");
-  insertAttr("dropdown-button__text", "style", "padding-left: 4px;");
-  insertText("dropdown-button__text", "Filter by All");
+
+  for (const user of usersList) {
+    let email = user.getAttribute("aria-label");
+    if (
+      (email.indexOf("@") > 0 && email.indexOf(filter) > 0) ||
+      (email.indexOf("@") > 0 && filter === undefined)
+    ) {
+      emailsList.push(sanitizeEmails(email));
+    }
+  }
+  return emailsList;
+}
+
+function sanitizeEmails(email) {
+  return email.slice(0, email.length - 1).toLowerCase();
+}
+
+function selectDomains(emailsList) {
+  let domainsList = [];
+  for (const domain of emailsList) {
+    let company = domain.slice(domain.indexOf("@") + 1);
+    domainsList.push(company.slice(0, company.indexOf(".")));
+  }
+  return domainsList;
 }
 
 function createCopyButton() {
@@ -198,6 +245,7 @@ function createCopyButton() {
     "class",
     "spectrum-ActionButton spectrum-ActionButton--sizeM"
   );
+  insertAttr("button-copy", "style", "margin: 0px 8px 8px 0px;");
   insertElement("button-copy__text", "span", "#button-copy");
   insertAttr("button-copy__text", "class", "spectrum-ActionButton-label");
   insertText("button-copy__text", "Copy All");
@@ -210,6 +258,7 @@ function createRemoveButton() {
     "class",
     "spectrum-ActionButton spectrum-ActionButton--sizeM"
   );
+  insertAttr("button-remove", "style", "margin: 0px 8px 8px 0px;");
   insertElement("button-remove__text", "span", "#button-remove");
   insertAttr("button-remove__text", "class", "spectrum-ActionButton-label");
   insertText("button-remove__text", "Remove All");
