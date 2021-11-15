@@ -40,7 +40,7 @@ The author of this extension is free from any malicious use of the source code.
 2. Enable extension
 3. Go to your adobe xd prototype link or refresh your prototype page
 
-**Compatibility**
+## Compatibility
 
 |                  Browser                   | It works |
 | :----------------------------------------: | :------: |
