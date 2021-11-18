@@ -14,7 +14,7 @@
 [![About](https://img.shields.io/badge/-About-470137)](#about)
 [![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
-[![Download](https://img.shields.io/badge/-Download-FE62F5)](#)
+[![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/adobe-xd-e-tools/dpbkhbpcahphenpdohcacldcfjejonoc/)
 
 <img src=".github/example.png" alt="example" width="400">
 
@@ -36,7 +36,7 @@ The author of this extension is free from any malicious use of the source code.
 
 ## How to use
 
-1. Install extension [here](#)
+1. Install extension [here](https://chrome.google.com/webstore/detail/adobe-xd-e-tools/dpbkhbpcahphenpdohcacldcfjejonoc/)
 2. Enable extension
 3. Go to your adobe xd prototype link or refresh your prototype page
 
