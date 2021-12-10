@@ -57,8 +57,6 @@ The author of this extension is free from any malicious use of the source code.
 
 - Update extension manifest v2 to v3
 
----
-
 ## [1.0] - 2021-12-08
 
 ### Publishing
