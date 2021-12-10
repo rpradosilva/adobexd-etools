@@ -49,6 +49,21 @@ The author of this extension is free from any malicious use of the source code.
 | <img src=".github/firefox.png" width="32"> |    ✅    |
 | <img src=".github/safari.png" width="32">  |    ⛔    |
 
+## Changelog
+
+## [1.1] - 2021-12-10
+
+### Changed
+
+- Update extension manifest v2 to v3
+
+## [1.0] - 2021-11-13
+
+### Publishing
+
+- Extension manifest v2
+- Created features to filter, copy and remove e-mails
+
 ## Authors
 
 |      [Rafael Prado](http://www.github.com/rpradosilva)      |
