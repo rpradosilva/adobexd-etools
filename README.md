@@ -51,13 +51,13 @@ The author of this extension is free from any malicious use of the source code.
 
 ## Changelog
 
-## [1.1] - 2021-12-10
+## **1.1** - 2021-12-10
 
 ### Changed
 
 - Update extension manifest v2 to v3
 
-## [1.0] - 2021-11-13
+## **1.0** - 2021-11-13
 
 ### Publishing
 
