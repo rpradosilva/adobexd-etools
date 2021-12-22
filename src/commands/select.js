@@ -6,6 +6,7 @@ function selectEmails(filter) {
 
   for (const user of usersList) {
     let email = user.getAttribute("aria-label").toLowerCase();
+
     if (
       (email.indexOf("@") > 0 && email.indexOf(filter) >= 0) ||
       (email.indexOf("@") > 0 && filter === undefined) ||
@@ -31,7 +32,7 @@ function selectCompanies(emailsList) {
   }
 
   function sanitazeCompany(domain) {
-    let companyDomain = domain.slice(domain.indexOf("@") + 1, domain.length);
+    let companyDomain = domain.slice(domain.indexOf("@"), domain.length);
     return companyDomain;
   }
 
