@@ -4,15 +4,19 @@ function selectEmails(filter) {
     "[data-auto='inviteContainer'] ul li .ccx-ss-user-card-details [aria-label]"
   );
 
+  console.log(filter);
+
   for (const user of usersList) {
-    let email = user.getAttribute("aria-label");
+    let email = user.getAttribute("aria-label").toLowerCase();
+    console.log(email);
     if (
-      (email.indexOf("@") > 0 && email.indexOf(filter) > 0) ||
+      (email.indexOf("@") > 0 && email.indexOf(filter) >= 0) ||
       (email.indexOf("@") > 0 && filter === undefined) ||
       (email.indexOf("@") > 0 && filter === "")
     ) {
       emailsList.push(sanitizeEmails(email));
     }
+    console.log(emailsList);
   }
 
   function sanitizeEmails(email) {
@@ -31,9 +35,8 @@ function selectCompanies(emailsList) {
   }
 
   function sanitazeCompany(domain) {
-    let companyDomain = domain.slice(domain.indexOf("@") + 1);
-    let companySanitazed = companyDomain.slice(0, companyDomain.indexOf("."));
-    return companySanitazed;
+    let companyDomain = domain.slice(domain.indexOf("@") + 1, domain.length);
+    return companyDomain;
   }
 
   return companies;
