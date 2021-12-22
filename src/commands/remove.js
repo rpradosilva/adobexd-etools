@@ -11,7 +11,9 @@ function removeEmails(filter) {
 
     for (const userEmail of userFields) {
       for (const emailSelected of emailsList) {
-        if (emailSelected == userEmail.textContent) {
+        if (
+          emailSelected.toLowerCase() == userEmail.textContent.toLowerCase()
+        ) {
           let userAction = userItem.lastElementChild;
           let dropdownButton = userAction.querySelector("button");
           if (dropdownButton != null) {
