@@ -39,6 +39,7 @@ function createToolkit() {
     let resultRemove = confirm("The emails will be removed. Please be right.");
     if (resultRemove == true) {
       removeEmails(filter);
+      window.location.reload();
     }
   });
 }
