@@ -16,7 +16,7 @@
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
 [![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/adobe-xd-e-tools/dpbkhbpcahphenpdohcacldcfjejonoc/)
 
-<img src=".github/example.png" alt="example" width="400">
+<img src=".github/example.gif" alt="example" width="100%">
 
 </div>
 
@@ -48,21 +48,6 @@ The author of this extension is free from any malicious use of the source code.
 |  <img src=".github/edge.png" width="32">   |    ✅    |
 | <img src=".github/firefox.png" width="32"> |    ✅    |
 | <img src=".github/safari.png" width="32">  |    ⛔    |
-
-## Changelog
-
-## **1.1** - 2021-12-10
-
-### Changed
-
-- Update extension manifest v2 to v3
-
-## **1.0** - 2021-11-13
-
-### Publishing
-
-- Extension manifest v2
-- Created features to filter, copy and remove e-mails
 
 ## Authors
 
