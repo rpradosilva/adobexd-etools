@@ -57,4 +57,4 @@ The author of this extension is free from any malicious use of the source code.
 
 ---
 
-### [<img alt="Logo RPrado" src="https://raw.githubusercontent.com/rpradosilva/rpradosilva/master/.github/logo-rprado.png" width="91px" />](http://rprado.design)
+[<img alt="Logo RPrado" src="https://avatars.githubusercontent.com/u/87092922" width="40" />](http://rprado.design)
