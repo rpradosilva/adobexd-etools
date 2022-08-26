@@ -1,26 +1,32 @@
 function removeEmails(filter) {
   const emailsList = selectEmails(filter);
-  const usersItem = document.querySelectorAll(
+  const collaborators = document.querySelectorAll(
     "[data-entity-type='collaborator']"
   );
 
-  for (const userItem of usersItem) {
-    let userInfos = userItem.firstElementChild;
-    let userDetails = userInfos.querySelector(".ccx-ss-user-card-details");
-    let userFields = userDetails.querySelectorAll("[aria-label]");
+  for (const collaborator of collaborators) {
+    const permissions = collaborator.querySelector(
+      ".permissions-dropdown-container"
+    );
+    let userAction;
+    let collaboratorEmail = collaborator
+      .querySelector("[aria-label]")
+      .textContent.toLowerCase();
 
-    for (const userEmail of userFields) {
-      for (const emailSelected of emailsList) {
-        if (
-          emailSelected.toLowerCase() == userEmail.textContent.toLowerCase()
-        ) {
-          let userAction = userItem.lastElementChild;
-          let dropdownButton = userAction.querySelector("button");
-          if (dropdownButton != null) {
-            dropdownButton.click();
-            let dropdownItem = document.querySelectorAll(".spectrum-Menu-item");
-            dropdownItem[2].click();
-          }
+    for (const emailSelected of emailsList) {
+      if (emailSelected.toLowerCase() == collaboratorEmail) {
+        if (permissions != null) {
+          userAction = collaborator.lastElementChild.querySelector("button");
+          userAction.click();
+
+          let removeCollaborator = document.querySelectorAll(
+            ".spectrum-Menu-item"
+          );
+          removeCollaborator[2].click();
+        } else {
+          userAction = collaborator.lastElementChild
+            .querySelector("button")
+            .click();
         }
       }
     }

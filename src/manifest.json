@@ -1,7 +1,7 @@
 {
   "name": "Adobe Xd E-tools",
   "description": "An extension to enable Adobe Xd prototype email tools",
-  "version": "1.5",
+  "version": "1.6",
   "permissions": ["clipboardWrite"],
   "icons": {
     "16": "assets/icon.png",

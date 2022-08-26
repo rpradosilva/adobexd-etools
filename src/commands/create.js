@@ -1,5 +1,5 @@
 function createToolkitArea() {
-  insertElement("toolkit-area", "div", ".ccx-ss-share-invite", 2);
+  insertElement("toolkit-area", "div", ".ccx-ss-share-active-view", 0);
   insertAttr("toolkit-area", "class", "ccx-ss-invite-footer-button-wrapper");
   insertAttr(
     "toolkit-area",
