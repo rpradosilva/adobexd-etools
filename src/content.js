@@ -12,7 +12,6 @@ document.addEventListener(
 
 function createToolkit() {
   createToolkitArea();
-  createToolkitTitle();
   createButtonContainer();
   createFilterButton();
   createFilterOptions();
@@ -25,7 +24,6 @@ function createToolkit() {
   filterButton.addEventListener("change", function () {
     let option = this.selectedOptions[0];
     let selectedOption = option.value;
-    filterItems(selectedOption);
     return (filter = selectedOption);
   });
 
