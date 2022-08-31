@@ -1,13 +1,4 @@
-function createToolkit() {
-  createArea();
-  createContainer();
-  createFilterButton();
-  createFilterOptions(collaborators);
-  createCopyButton();
-  createRemoveButton();
-}
-
-function createArea() {
+function createToolkitArea() {
   insertElement("toolkit-area", "div", ".ccx-ss-share-active-view", 0);
   insertAttr("toolkit-area", "class", "ccx-ss-invite-footer-button-wrapper");
   insertAttr(
@@ -17,7 +8,7 @@ function createArea() {
   );
 }
 
-function createContainer() {
+function createButtonContainer() {
   insertElement("button-container", "div", "#toolkit-area");
   insertAttr("button-container", "class", "ccx-ss-invite-footer-cta-container");
   insertAttr("button-container", "style", "display: flex; width: 100%; ");
@@ -36,12 +27,8 @@ function createFilterButton() {
 }
 
 function createFilterOptions() {
-  let allCompanies = [];
-
-  for (const collaborator of collaborators) {
-    allCompanies.push(collaborator.domain);
-  }
-
+  const emailsList = selectEmails();
+  const allCompanies = selectCompanies(emailsList);
   let companies = [...new Set(allCompanies)];
   for (const company of companies) {
     insertElement(
