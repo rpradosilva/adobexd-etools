@@ -16,10 +16,11 @@
       "matches": ["https://xd.adobe.com/*"],
       "js": [
         "content.js",
-        "commands/load.js",
-        "commands/read.js",
+        "commands/copy.js",
+        "commands/create.js",
         "commands/generate.js",
-        "commands/create.js"
+        "commands/read.js",
+        "commands/remove.js"
       ]
     }
   ],

@@ -1,4 +1,4 @@
-async function readCollaborators() {
+function readCollaborators() {
   const selectCollaborators = document.querySelectorAll(
     "[data-entity-type='collaborator']"
   );

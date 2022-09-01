@@ -1,4 +1,5 @@
 let collaborators = [];
+let filter = "";
 
 document.addEventListener(
   "click",
@@ -12,24 +13,16 @@ document.addEventListener(
   false
 );
 
-let filter;
-let filterButton = document.querySelector("#select-button");
-filterButton.addEventListener("change", function () {
-  let option = this.selectedOptions[0];
-  let selectedOption = option.value;
-  return (filter = selectedOption);
-});
+function loadExtension() {
+  let listeningLoading = setInterval(inviteExist, 1000);
+  let identifyCompleteLoad = ".ccx-ss-collaborators-list-header-container";
 
-let copyButton = document.querySelector("#button-copy");
-copyButton.addEventListener("click", function () {
-  copyEmails(filter);
-});
-
-let removeButton = document.querySelector("#button-remove");
-removeButton.addEventListener("click", function () {
-  let resultRemove = confirm("The emails will be removed. Please be right.");
-  if (resultRemove == true) {
-    removeEmails(filter);
-    window.location.reload();
+  async function inviteExist() {
+    if (document.querySelectorAll(identifyCompleteLoad).length >= 1) {
+      readCollaborators();
+      createToolkit();
+      clearInterval(listeningLoading);
+      return collaborators;
+    }
   }
-});
+}

@@ -33,6 +33,13 @@ function createFilterButton() {
   insertElement("option-all", "option", "#select-button");
   insertAttr("option-all", "value", "");
   insertText("option-all", "Filter by All");
+
+  let filterButton = document.querySelector("#select-button");
+  filterButton.addEventListener("change", function () {
+    let option = this.selectedOptions[0];
+    let selectedOption = option.value;
+    filter = selectedOption;
+  });
 }
 
 function createFilterOptions() {
@@ -68,6 +75,11 @@ function createCopyButton() {
   insertElement("button-copy__text", "span", "#button-copy");
   insertAttr("button-copy__text", "class", "spectrum-ActionButton-label");
   insertText("button-copy__text", "Copy");
+
+  let copyButton = document.querySelector("#button-copy");
+  copyButton.addEventListener("click", function () {
+    copy(filter);
+  });
 }
 
 function createRemoveButton() {
@@ -80,4 +92,9 @@ function createRemoveButton() {
   insertElement("button-remove__text", "span", "#button-remove");
   insertAttr("button-remove__text", "class", "spectrum-ActionButton-label");
   insertText("button-remove__text", "Remove");
+
+  let removeButton = document.querySelector("#button-remove");
+  removeButton.addEventListener("click", function () {
+    remove(filter);
+  });
 }
