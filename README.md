@@ -16,7 +16,7 @@
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
 [![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/adobe-xd-e-tools/dpbkhbpcahphenpdohcacldcfjejonoc/)
 
-<img src=".github/example.gif" alt="example" width="100%">
+<img src=".github/print.png" alt="example" width="300">
 
 </div>
 
