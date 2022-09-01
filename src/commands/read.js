@@ -16,9 +16,9 @@ function readCollaborators() {
     );
 
     if (identifyPermissions != null) {
-      permission = "editor";
-    } else {
       permission = "adm";
+    } else {
+      permission = "editor";
     }
 
     collaborators.push({ email, domain, permission });

@@ -1,13 +1,33 @@
 function remove(filter) {
-  // confirm("The emails will be removed. Please be right.");
+  const selectCollaborators = document.querySelectorAll(
+    "[data-entity-type='collaborator']"
+  );
+  confirm("The emails will be removed. Please be right.");
 
   for (const collaborator of collaborators) {
-    if (collaborator.email.includes(filter)) {
-      console.log(
-        `${collaborators.indexOf(collaborator)} - ${collaborator.email}`
-      );
+    let isOwner =
+      selectCollaborators[
+        collaborators.indexOf(collaborator)
+      ].lastElementChild.className.indexOf("owner");
+
+    let isYou = document
+      .querySelectorAll(".ccx-ss-user-name")
+      [collaborators.indexOf(collaborator)].textContent.indexOf("(");
+
+    if (isOwner < 0 && isYou < 0) {
+      if (collaborator.email.includes(filter)) {
+        selectCollaborators[
+          collaborators.indexOf(collaborator)
+        ].lastElementChild
+          .querySelector("button")
+          .click();
+
+        if (collaborator.permission == "adm") {
+          document.querySelectorAll(".spectrum-Menu-item")[2].click();
+        }
+      }
     }
   }
 
-  // window.location.reload();
+  window.location.reload();
 }
