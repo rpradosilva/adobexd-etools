@@ -20,7 +20,11 @@ function createArea() {
 function createContainer() {
   insertElement("button-container", "div", "#toolkit-area");
   insertAttr("button-container", "class", "ccx-ss-invite-footer-cta-container");
-  insertAttr("button-container", "style", "display: flex; width: 100%; ");
+  insertAttr(
+    "button-container",
+    "style",
+    "background: #e4e4e4; border-radius: 4px; display: flex; gap: 4px; width: 100%; padding: 4px;"
+  );
 }
 
 function createFilterButton() {
@@ -30,15 +34,18 @@ function createFilterButton() {
     "class",
     "spectrum-ActionButton spectrum-ActionButton--sizeM"
   );
+  insertAttr("select-button", "style", "flex-grow: 2;");
   insertElement("option-all", "option", "#select-button");
   insertAttr("option-all", "value", "");
   insertText("option-all", "Filter by All");
 
+  filter = [];
   let filterButton = document.querySelector("#select-button");
   filterButton.addEventListener("change", function () {
     let option = this.selectedOptions[0];
     let selectedOption = option.value;
     filter = selectedOption;
+    collaboratorsFilter(filter);
   });
 }
 
@@ -67,13 +74,10 @@ function createFilterOptions() {
 
 function createCopyButton() {
   insertElement("button-copy", "button", "#button-container");
-  insertAttr(
-    "button-copy",
-    "class",
-    "spectrum-ActionButton spectrum-ActionButton--sizeM"
-  );
+  insertAttr("button-copy", "class", "spectrum-Button spectrum-Button--cta");
+  insertAttr("button-copy", "style", "border-radius: 4px;");
   insertElement("button-copy__text", "span", "#button-copy");
-  insertAttr("button-copy__text", "class", "spectrum-ActionButton-label");
+  insertAttr("button-copy__text", "class", "spectrum-Button-label");
   insertText("button-copy__text", "Copy");
 
   let copyButton = document.querySelector("#button-copy");
@@ -84,13 +88,14 @@ function createCopyButton() {
 
 function createRemoveButton() {
   insertElement("button-remove", "button", "#button-container");
+  insertAttr("button-remove", "class", "spectrum-Button spectrum-Button--cta");
   insertAttr(
     "button-remove",
-    "class",
-    "spectrum-ActionButton spectrum-ActionButton--sizeM"
+    "style",
+    "background: #ff0038; border-color: #ff0038; border-radius: 4px; margin: 0px;"
   );
   insertElement("button-remove__text", "span", "#button-remove");
-  insertAttr("button-remove__text", "class", "spectrum-ActionButton-label");
+  insertAttr("button-remove__text", "class", "spectrum-Button-label");
   insertText("button-remove__text", "Remove");
 
   let removeButton = document.querySelector("#button-remove");

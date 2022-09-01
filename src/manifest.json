@@ -18,6 +18,7 @@
         "content.js",
         "commands/copy.js",
         "commands/create.js",
+        "commands/filter.js",
         "commands/generate.js",
         "commands/read.js",
         "commands/remove.js"

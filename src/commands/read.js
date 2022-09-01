@@ -2,6 +2,7 @@ function readCollaborators() {
   const selectCollaborators = document.querySelectorAll(
     "[data-entity-type='collaborator']"
   );
+  collaborators = [];
 
   for (const collaborator of selectCollaborators) {
     const email = collaborator
@@ -14,7 +15,6 @@ function readCollaborators() {
       ".permissions-dropdown-container button"
     );
 
-    let permission;
     if (identifyPermissions != null) {
       permission = "editor";
     } else {
