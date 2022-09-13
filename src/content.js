@@ -15,7 +15,7 @@ document.addEventListener(
 
 function loadExtension() {
   let listeningLoading = setInterval(inviteExist, 1000);
-  let identifyCompleteLoad = ".ccx-ss-collaborators-list-header-container";
+  let identifyCompleteLoad = "#ccx-ss-collaborators-list";
 
   async function inviteExist() {
     if (document.querySelectorAll(identifyCompleteLoad).length >= 1) {
