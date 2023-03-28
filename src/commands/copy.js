@@ -12,9 +12,8 @@ function copy(filter) {
   document.body.appendChild(inputElement);
   inputElement.select();
   inputElement.setSelectionRange(0, 99999);
+  document.execCommand("copy");
   navigator.clipboard.writeText(inputElement.value);
-  navigator.clipboard.writeText(selectedEmails);
-  inputElement.remove();
 
   alert(`${selectedEmails.length} e-mails copied to clipboard`);
 }
