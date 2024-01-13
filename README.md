@@ -14,7 +14,7 @@
 [![About](https://img.shields.io/badge/-About-470137)](#about)
 [![License](https://img.shields.io/badge/-License-470137)](/LICENSE)
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
-[![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chrome.google.com/webstore/detail/adobe-xd-e-tools/dpbkhbpcahphenpdohcacldcfjejonoc/)
+[![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chromewebstore.google.com/u/1/detail/dpbkhbpcahphenpdohcacldcfjejonoc)
 
 <img src=".github/print.png" alt="example" width="300">
 
