@@ -16,7 +16,7 @@
 [![Authors](https://img.shields.io/badge/-Author-470137)](#authors)
 [![Download](https://img.shields.io/badge/-Download-FE62F5)](https://chromewebstore.google.com/u/1/detail/dpbkhbpcahphenpdohcacldcfjejonoc)
 
-<img src=".github/print.png" alt="example" width="300">
+<img src=".github/screenshot.png" alt="example" width="450" style="border-radius:8px;">
 
 </div>
 
