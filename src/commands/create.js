@@ -1,6 +1,5 @@
 function createToolkit() {
   createArea();
-  createContainer();
   createFilterButton();
   createFilterOptions(collaborators);
   createCopyButton();
@@ -8,36 +7,35 @@ function createToolkit() {
 }
 
 function createArea() {
-  insertElement("toolkit-area", "div", ".ccx-ss-share-active-view", 0);
-  insertAttr("toolkit-area", "class", "ccx-ss-invite-footer-button-wrapper");
-  insertAttr(
-    "toolkit-area",
-    "style",
-    "display: flex; border-radius: 4px; width: 100%; padding: 0px 16px; margin: 0px 0px 8px 0px;"
+  insertElement(
+    "innerZoomElementWrapper",
+    "div",
+    ".ccx-ss-share-active-view",
+    0
   );
-}
-
-function createContainer() {
-  insertElement("button-container", "div", "#toolkit-area");
-  insertAttr("button-container", "class", "ccx-ss-invite-footer-cta-container");
   insertAttr(
-    "button-container",
+    "innerZoomElementWrapper",
+    "class",
+    "ccx-ss-invite-footer-button-wrapper"
+  );
+  insertAttr(
+    "innerZoomElementWrapper",
     "style",
-    "background: #e4e4e4; border-radius: 4px; display: flex; gap: 4px; width: 100%; padding: 4px;"
+    "display:flex;margin:16px 24px 24px 24px;gap:8px;"
   );
 }
 
 function createFilterButton() {
-  insertElement("select-button", "select", "#button-container");
-  insertAttr(
-    "select-button",
-    "class",
-    "spectrum-ActionButton spectrum-ActionButton--sizeM"
-  );
-  insertAttr("select-button", "style", "flex-grow: 2;");
+  insertElement("select-button", "select", "#innerZoomElementWrapper");
+  insertAttr("select-button", "class", "spectrum-Textfield--quiet");
   insertElement("option-all", "option", "#select-button");
   insertAttr("option-all", "value", "");
-  insertText("option-all", "Filter by All");
+  insertText("option-all", "All emails");
+  insertAttr(
+    "select-button",
+    "style",
+    "color: #505050; flex:2; margin-right:8px;"
+  );
 
   filter = [];
   let filterButton = document.querySelector("#select-button");
@@ -73,9 +71,12 @@ function createFilterOptions() {
 }
 
 function createCopyButton() {
-  insertElement("button-copy", "button", "#button-container");
-  insertAttr("button-copy", "class", "spectrum-Button spectrum-Button--cta");
-  insertAttr("button-copy", "style", "border-radius: 4px;");
+  insertElement("button-copy", "button", "#innerZoomElementWrapper");
+  insertAttr(
+    "button-copy",
+    "class",
+    "spectrum-Button spectrum-Button--primary"
+  );
   insertElement("button-copy__text", "span", "#button-copy");
   insertAttr("button-copy__text", "class", "spectrum-Button-label");
   insertText("button-copy__text", "Copy");
@@ -87,16 +88,16 @@ function createCopyButton() {
 }
 
 function createRemoveButton() {
-  insertElement("button-remove", "button", "#button-container");
-  insertAttr("button-remove", "class", "spectrum-Button spectrum-Button--cta");
+  insertElement("button-remove", "button", "#innerZoomElementWrapper");
   insertAttr(
     "button-remove",
-    "style",
-    "background: #ff0038; border-color: #ff0038; border-radius: 4px; margin: 0px;"
+    "class",
+    "spectrum-Button spectrum-Button--warning"
   );
   insertElement("button-remove__text", "span", "#button-remove");
   insertAttr("button-remove__text", "class", "spectrum-Button-label");
   insertText("button-remove__text", "Remove");
+  insertAttr("button-remove", "style", "margin-left:0px;");
 
   let removeButton = document.querySelector("#button-remove");
   removeButton.addEventListener("click", function () {
